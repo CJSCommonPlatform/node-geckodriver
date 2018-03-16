@@ -1,13 +1,13 @@
-## node-geckodriver [![Build Status: Linux](https://travis-ci.org/vladikoff/node-geckodriver.svg?branch=master)](https://travis-ci.org/vladikoff/node-geckodriver) [![Build status: Windows](https://ci.appveyor.com/api/projects/status/s1e19ujtssxcn268/branch/master?svg=true)](https://ci.appveyor.com/project/vladikoff/node-geckodriver/branch/master)
+## node-geckodriver [![Build Status: Linux](https://travis-ci.org/CJSCommonPlatform/node-geckodriver.svg?branch=master)](https://travis-ci.org/CJSCommonPlatform/node-geckodriver) [![Build status: Windows](https://ci.appveyor.com/api/projects/status/s1e19ujtssxcn268/branch/master?svg=true)](https://ci.appveyor.com/project/CJSCommonPlatform/node-geckodriver/branch/master)
 
 > Downloader for [github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases)
 
-This puts `geckodriver` or `geckodriver.exe` into root of this module.
+This puts `geckodriver` or `geckodriver.exe` into lib/geckodriver/ directory of this module.
 
 ## Install
 
 ```
-npm install geckodriver
+npm install @cpp/geckodriver
 ```
 
 ## Usage
@@ -55,6 +55,11 @@ To set an alternate CDN location for geckodriver binaries, set the `GECKODRIVER_
 GECKODRIVER_CDNURL=https://INTERNAL_CDN/geckodriver/download
 ```
 
+Alternate version:
+```
+GECKODRIVER_VERSION=0.19.1
+```
+
 Binaries on your CDN should be located in a subdirectory of the above base URL. For example, `/vxx.xx.xx/*.tar.gz` should be located under `/geckodriver/download` above.
 
 Alternatively, you can add the same property to your `.npmrc` file.
@@ -80,7 +85,7 @@ Default location is set to https://github.com/mozilla/geckodriver/releases/downl
 * 1.1.x - geckodriver 0.10
 
 ## Changelog
-
+* 2.0.0 - geckodriver 0.20.0, better support for proxies (copy chromedriver behaviour), use scoped package
 * 1.10.0 - geckodriver 0.19.1, switch tar package, enable Win32 builds again, process.env.npm_config_geckodriver_cdnurl support
 * 1.9.0 - updated to geckodriver 0.19.0 32-bit windows support removed.
 * 1.8.1 - added geckodriver.exe bin for Windows
