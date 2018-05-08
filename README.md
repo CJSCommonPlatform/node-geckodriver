@@ -7,7 +7,7 @@ This puts `geckodriver` or `geckodriver.exe` into lib/geckodriver/ directory of 
 ## Install
 
 ```
-npm install @cpp/geckodriver
+npm install @cjscp/geckodriver
 ```
 
 ## Usage
@@ -57,7 +57,7 @@ GECKODRIVER_CDNURL=https://INTERNAL_CDN/geckodriver/download
 
 Alternate version:
 ```
-GECKODRIVER_VERSION=0.19.1
+GECKODRIVER_VERSION=0.20.1
 ```
 
 Binaries on your CDN should be located in a subdirectory of the above base URL. For example, `/vxx.xx.xx/*.tar.gz` should be located under `/geckodriver/download` above.
@@ -85,6 +85,7 @@ Default location is set to https://github.com/mozilla/geckodriver/releases/downl
 * 1.1.x - geckodriver 0.10
 
 ## Changelog
+* 2.0.1 - geckodriver 0.20.1, fixes bug when closing firefox
 * 2.0.0 - geckodriver 0.20.0, better support for proxies (copy chromedriver behaviour), use scoped package
 * 1.10.0 - geckodriver 0.19.1, switch tar package, enable Win32 builds again, process.env.npm_config_geckodriver_cdnurl support
 * 1.9.0 - updated to geckodriver 0.19.0 32-bit windows support removed.
