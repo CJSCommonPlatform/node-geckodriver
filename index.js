@@ -42,7 +42,7 @@ switch (process.platform) {
     }
     break;
   case 'win32':
-    extension = '.zip';
+    extension = 'zip';
     executable = 'geckodriver.exe';
     if (process.arch === 'x64') {
       platform = 'win64';
